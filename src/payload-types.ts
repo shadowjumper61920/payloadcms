@@ -23,16 +23,6 @@ export interface Page {
   updatedAt: string
   password?: string
 }
-export interface PageOrder {
-  id: string
-  title: string
-  pageOrder: Array<string>
-  slug?: string
-  _status?: 'draft' | 'published'
-  createdAt: string
-  updatedAt: string
-  password?: string
-}
 export interface User {
   id: string
   email?: string
@@ -40,6 +30,16 @@ export interface User {
   resetPasswordExpiration?: string
   loginAttempts?: number
   lockUntil?: string
+  createdAt: string
+  updatedAt: string
+  password?: string
+}
+export interface PageOrder {
+  id: string
+  title: string
+  pageOrder: Array<string>
+  slug?: string
+  _status?: 'draft' | 'published'
   createdAt: string
   updatedAt: string
   password?: string

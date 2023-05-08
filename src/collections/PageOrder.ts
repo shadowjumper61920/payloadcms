@@ -9,7 +9,7 @@ export const PageOrder: CollectionConfig = {
       {
         name: 'slider', // required
         type: 'array', // required
-        label: 'Page Order',
+        label: 'Page Orders',
         fields: [ // required
           {
             name: 'title',
